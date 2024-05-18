@@ -1,0 +1,149 @@
+:root {
+    --width: 150px;
+    --primary: #fff;
+    --secondary: #ffeb3b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.sec1,
+.sec2,
+.sec3 {
+    height: 700px;
+    width: 100%;
+}
+
+.sec1 {
+    background-image: url('https://minimalistic-wallpaper.demolab.com/?random=1');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+
+.sec1 p {
+    background-color: transparent;
+    position: absolute;
+    top:20%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 40%;
+    font-size: 100px;
+    color: var(--primary);
+}
+
+.sec2 {
+    background-color: var(--secondary);
+    width: 100%;
+    position: relative;
+    color:var(--secondary);
+
+    
+}
+
+.sec2 p {
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    line-height: 500px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 25%;
+    right: 25%;
+    transform: rotate(-5deg);
+    font-size: 80px;
+    color: var(--primary);
+    transition: .5s;
+    
+}
+.sec2 p:hover {
+    transform: rotate(5deg) ;
+}
+
+.sec3 {
+    background-image: url('https://minimalistic-wallpaper.demolab.com/?random=2');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+.sec3 p {
+    background-color: transparent;
+    position: absolute;
+    bottom:20%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 38%;
+    font-size: 100px;
+    color: var(--primary);
+}
+
+.sec2:before {
+    content: '';
+    position: absolute;
+    border-bottom: 150px solid var(--secondary);
+    border-left: 99.9vw solid transparent;
+    top: -100px;
+}
+.sec2:after {
+    content: '';
+    position: absolute;
+    border-top: 150px solid var(--secondary);
+    border-right: 99.9vw solid transparent;
+    bottom: -100px;
+    z-index: 1;
+}
+.sec1 audio {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    z-index: 1;
+    width: var(--width);
+}
+
+.sec3 audio {
+    text-align: center;
+    position: absolute;
+    bottom: 25%;
+    left: 49%;
+    z-index: 1;
+    width: var(--width);
+}
+
+audio::-webkit-media-controls {
+    opacity: 50%;
+    overflow: hidden;
+
+}
+audio::-webkit-media-controls-timeline {
+    display: none;
+
+}
+
+audio::-webkit-media-controls-toggle-closed-captions-button{
+    display: none;
+}
+audio::-webkit-media-controls-volume-slider {
+    background-color: transparent;
+}
+audio::-webkit-media-controls-panel {
+    background-color: var(--primary);
+    border-radius:0px ;
+
+}
+
+audio::-webkit-media-controls-current-time-display{
+    display: none;
+}
